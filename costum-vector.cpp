@@ -82,7 +82,7 @@ public:
         resize(mSize + 1, el);
     }
 
-    int &get(int index)
+    T &get(int index)
     {
         if (index >= mSize)
             throw invalid_argument("index out of range");
@@ -92,7 +92,7 @@ public:
             return arr[index];
     }
 
-    int &operator[](int index)
+    T &operator[](int index)
     {
         return get(index);
     }
