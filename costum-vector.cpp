@@ -24,7 +24,7 @@ public:
         resize(size, defaultValue);
     }
     CustomVector(CustomVector &c){
-        CustomVector(c.size());
+        resize(c.size());
         for(int i=0; i<c.size(); i++)
             arr[i] = c[i];
     }
